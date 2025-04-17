@@ -1,0 +1,63 @@
+2025-04-01 09:00:01 [INFO] Starting log_analyzer backend server on port 5000
+2025-04-01 09:00:03 [DEBUG] Loaded config from backend/config.yaml
+2025-04-01 09:00:05 [INFO] Connecting to MongoDB at mongodb://localhost:27017
+2025-04-01 09:00:07 [INFO] Connected to MongoDB
+2025-04-01 09:00:09 [DEBUG] Initializing Flask application
+2025-04-01 09:00:12 [INFO] Flask app running in development mode
+2025-04-01 09:00:15 [INFO] GET /api/files 200 OK
+2025-04-01 09:00:18 [DEBUG] Files listed: 2
+2025-04-01 09:01:00 [INFO] User soham uploaded sample1.log
+2025-04-01 09:01:03 [DEBUG] Parsing uploaded log file: sample1.log
+2025-04-01 09:01:06 [INFO] Parsed 100 log entries from sample1.log
+2025-04-01 09:01:10 [INFO] Inserting logs into MongoDB
+2025-04-01 09:01:12 [DEBUG] Inserted 100 log entries to collection log_entries
+2025-04-01 09:01:15 [INFO] User soham uploaded sample2.log
+2025-04-01 09:01:17 [DEBUG] Parsing uploaded log file: sample2.log
+2025-04-01 09:01:19 [INFO] Parsed 100 log entries from sample2.log
+2025-04-01 09:01:22 [INFO] Inserting logs into MongoDB
+2025-04-01 09:01:24 [DEBUG] Inserted 100 log entries to collection log_entries
+2025-04-01 09:02:00 [INFO] GET /api/analytics 200 OK
+2025-04-01 09:02:02 [DEBUG] Analytics query params: {"source_file": "sample1.log"}
+2025-04-01 09:02:04 [INFO] Analytics dashboard rendered
+2025-04-01 09:03:00 [INFO] GET /api/logs?level=ERROR 200 OK
+2025-04-01 09:03:02 [DEBUG] Filtered 12 error log entries
+2025-04-01 09:03:05 [INFO] User soham downloaded filtered logs as CSV
+2025-04-01 09:04:00 [INFO] POST /api/upload 201 Created
+2025-04-01 09:04:03 [ERROR] File upload failed: unsupported file type
+2025-04-01 09:04:05 [DEBUG] Request headers: {"Content-Type": "multipart/form-data"}
+2025-04-01 09:05:00 [INFO] GET /api/analytics/top_messages 200 OK
+2025-04-01 09:05:02 [DEBUG] Querying top 5 frequent log messages
+2025-04-01 09:05:04 [INFO] Top messages bar chart updated
+2025-04-01 09:06:00 [WARNING] High memory usage detected: 92%
+2025-04-01 09:06:10 [WARNING] Disk usage at 95%
+2025-04-01 09:06:20 [ERROR] Failed to connect to MongoDB: connection timeout
+2025-04-01 09:06:25 [INFO] Retrying MongoDB connection
+2025-04-01 09:06:28 [INFO] Connected to MongoDB
+2025-04-01 09:07:00 [INFO] GET /api/logs?level=WARNING 200 OK
+2025-04-01 09:07:02 [DEBUG] Filtered 17 warning log entries
+2025-04-01 09:07:05 [INFO] User soham exported warnings as CSV
+2025-04-01 09:08:00 [INFO] GET /api/analytics/hourly_counts_by_level 200 OK
+2025-04-01 09:08:02 [DEBUG] Hourly counts: {"INFO": 10, "ERROR": 3, "WARNING": 4, "DEBUG": 7}
+2025-04-01 09:08:04 [INFO] Hourly line chart updated
+2025-04-01 09:09:00 [WARNING] Chart rendering slow: 2.1s
+2025-04-01 09:09:02 [ERROR] Chart data missing for hour 15
+2025-04-01 09:10:00 [INFO] GET /api/logs 200 OK
+2025-04-01 09:10:02 [DEBUG] Log table refreshed
+2025-04-01 09:11:00 [INFO] User soham filtered logs by keyword: "timeout"
+2025-04-01 09:11:05 [DEBUG] Filtered logs: 4 entries matched
+2025-04-01 09:11:10 [INFO] User soham downloaded analytics_export.csv
+2025-04-01 09:12:00 [INFO] Scheduled nightly backup at 02:00
+2025-04-01 09:12:05 [DEBUG] Cron job registered: backup_nightly
+2025-04-01 09:13:00 [INFO] GET /api/files 200 OK
+2025-04-01 09:13:02 [DEBUG] Files listed: 4
+2025-04-01 09:13:05 [INFO] User admin deleted file sample1_old.log
+2025-04-01 09:14:00 [INFO] PUT /api/user/settings 200 OK
+2025-04-01 09:14:03 [DEBUG] User settings updated
+2025-04-01 09:14:06 [INFO] Settings saved for user soham
+2025-04-01 09:15:00 [WARNING] Deprecated API endpoint used: /api/old-logs
+2025-04-01 09:15:05 [ERROR] API rate limit exceeded for IP 192.168.1.55
+2025-04-01 09:15:10 [DEBUG] Rate limit reset scheduled
+2025-04-01 09:16:00 [INFO] GET /api/logs?date=2025-04-01 200 OK
+2025-04-01 09:16:02 [DEBUG] Log fetch duration: 320ms
+2025-04-01 09:17:00 [INFO] User soham logged out
+2025-04-01 09:17:05 [DEBUG] Session destroyed for user soham

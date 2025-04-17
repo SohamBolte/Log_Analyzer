@@ -1,0 +1,113 @@
+2025-04-02 08:05:12 [INFO] Starting development server at http://localhost:3000
+2025-04-02 08:05:13 [DEBUG] Loaded .env.local configuration
+2025-04-02 08:05:15 [INFO] Webpack build started
+2025-04-02 08:05:25 [INFO] Webpack build completed in 8.2s
+2025-04-02 08:05:27 [DEBUG] Source maps generated
+2025-04-02 08:05:30 [INFO] GET /api/user/profile 200 OK
+2025-04-02 08:05:32 [WARNING] CORS preflight request failed
+2025-04-02 08:05:34 [ERROR] Failed to fetch user profile: 401 Unauthorized
+2025-04-02 08:06:01 [INFO] User soham signed up
+2025-04-02 08:06:05 [DEBUG] JWT token issued for user soham
+2025-04-02 08:06:12 [INFO] POST /api/auth/login 200 OK
+2025-04-02 08:06:17 [WARNING] Login attempt failed: wrong password
+2025-04-02 08:06:21 [ERROR] Too many login attempts from IP 127.0.0.1
+2025-04-03 09:10:12 [INFO] GET /api/analytics/top_messages 200 OK
+2025-04-03 09:10:13 [DEBUG] Top messages aggregation: {"INFO": 22, "ERROR": 3}
+2025-04-03 09:10:15 [INFO] Top messages bar chart rendered
+2025-04-03 09:10:20 [WARNING] High CPU usage: 98%
+2025-04-03 09:10:25 [ERROR] Out of memory: node process killed
+2025-04-03 09:11:01 [INFO] GET /api/logs?level=DEBUG 200 OK
+2025-04-03 09:11:05 [DEBUG] Filtered logs: 17 debug entries
+2025-04-03 09:11:10 [INFO] User admin exported debug logs as CSV
+2025-04-03 09:11:15 [WARNING] Exported file size: 90KB
+2025-04-03 09:11:20 [ERROR] Failed to send export email
+2025-04-03 09:11:25 [INFO] GET /api/logs?date=2025-04-03 200 OK
+2025-04-04 13:12:45 [INFO] PUT /api/user/settings 200 OK
+2025-04-04 13:12:47 [DEBUG] User settings updated
+2025-04-04 13:12:49 [INFO] Settings saved for user soham
+2025-04-04 13:12:51 [WARNING] Deprecated setting used: theme=classic
+2025-04-04 13:12:53 [ERROR] Failed to update user settings: DB error
+2025-04-04 13:13:12 [INFO] GET /api/files 200 OK
+2025-04-04 13:13:13 [DEBUG] Files listed: 8
+2025-04-04 13:13:15 [INFO] User admin uploaded sample1_devlike.log
+2025-04-04 13:13:17 [WARNING] File system usage high: 95%
+2025-04-04 13:13:19 [ERROR] Could not delete file: permission denied
+2025-04-05 07:20:30 [INFO] Scheduled database backup at 01:00
+2025-04-05 07:20:32 [DEBUG] Backup cron job registered
+2025-04-05 07:20:35 [INFO] GET /api/logs?source_file=sample2_devlike.log 200 OK
+2025-04-05 07:20:37 [WARNING] Large log file detected: 1.8GB
+2025-04-05 07:20:39 [ERROR] Log file read error: EIO
+2025-04-05 07:21:01 [INFO] User soham logged out
+2025-04-05 07:21:03 [DEBUG] Session destroyed for user soham
+2025-04-06 15:45:10 [INFO] GET /api/analytics 200 OK
+2025-04-06 15:45:11 [DEBUG] Analytics cache miss
+2025-04-06 15:45:13 [INFO] Analytics dashboard rendered
+2025-04-06 15:45:15 [WARNING] Analytics dashboard load slow: 2.1s
+2025-04-06 15:45:17 [ERROR] Analytics data fetch failed: 504 Gateway Timeout
+2025-04-07 10:33:40 [INFO] GET /api/logs 200 OK
+2025-04-07 10:33:42 [DEBUG] Log table refreshed
+2025-04-07 10:33:44 [INFO] User admin filtered logs by ERROR
+2025-04-07 10:33:46 [WARNING] Too many error logs: 15 in last hour
+2025-04-07 10:33:48 [ERROR] Error quota exceeded for user admin
+2025-04-08 18:12:20 [INFO] GET /api/files 200 OK
+2025-04-08 18:12:22 [DEBUG] Files listed: 12
+2025-04-08 18:12:24 [INFO] User admin deleted file sample2_old.log
+2025-04-08 18:12:26 [WARNING] File deletion slow: 2.7s
+2025-04-08 18:12:28 [ERROR] File deletion failed: file busy
+2025-04-09 17:22:40 [INFO] Nightly backup started
+2025-04-09 17:22:42 [DEBUG] Backup script running
+2025-04-09 17:22:44 [INFO] Backup completed successfully
+2025-04-09 17:22:46 [WARNING] Backup size exceeds 1.5GB
+2025-04-09 17:22:48 [ERROR] Failed to upload backup to S3
+2025-04-09 17:23:01 [INFO] Issue reported: backup upload failure
+2025-04-09 17:23:03 [DEBUG] Issue ticket created: #2345
+2025-04-10 13:45:12 [INFO] GET /api/logs?level=INFO 200 OK
+2025-04-10 13:45:14 [DEBUG] Filtered logs: 32 info entries
+2025-04-10 13:45:16 [INFO] User admin exported info logs as CSV
+2025-04-10 13:45:18 [WARNING] Exported file size: 140KB
+2025-04-10 13:45:20 [ERROR] Failed to send export email
+2025-04-10 13:45:22 [INFO] GET /api/logs?date=2025-04-10 200 OK
+2025-04-11 19:55:30 [INFO] GET /api/analytics/hourly_counts_by_level 200 OK
+2025-04-11 19:55:32 [DEBUG] Hourly counts: {"INFO": 18, "ERROR": 6, "WARNING": 4, "DEBUG": 11}
+2025-04-11 19:55:34 [INFO] Hourly line chart updated
+2025-04-11 19:55:36 [WARNING] Chart rendering slow: 2.1s
+2025-04-11 19:55:38 [ERROR] Chart data missing for hour 17
+2025-04-11 19:55:40 [INFO] GET /api/logs 200 OK
+2025-04-12 23:45:10 [DEBUG] User filter changed: {"level": "WARNING"}
+2025-04-12 23:45:12 [INFO] GET /api/logs?level=WARNING 200 OK
+2025-04-12 23:45:14 [WARNING] Too many warning logs: 12 in last hour
+2025-04-12 23:45:16 [ERROR] User admin exceeded warning quota
+2025-04-12 23:45:18 [INFO] User admin notified
+2025-04-13 12:05:40 [INFO] GET /api/analytics 200 OK
+2025-04-13 12:05:42 [DEBUG] Analytics cache hit
+2025-04-13 12:05:44 [INFO] Dashboard load time: 1.5s
+2025-04-13 12:05:46 [WARNING] Analytics cache nearly expired
+2025-04-13 12:05:48 [ERROR] Failed to refresh analytics cache
+2025-04-13 12:05:50 [INFO] GET /api/logs?level=ERROR 200 OK
+2025-04-13 12:05:52 [DEBUG] Filtered logs: 20 error entries
+2025-04-13 12:05:54 [INFO] User soham exported error logs as CSV
+2025-04-13 12:05:56 [WARNING] Exported file size: 70KB
+2025-04-13 12:05:58 [ERROR] Failed to send export email
+2025-04-13 12:06:00 [INFO] GET /api/logs?date=2025-04-13 200 OK
+2025-04-14 14:55:10 [DEBUG] GET /api/logs?search=memory 200 OK
+2025-04-14 14:55:12 [INFO] Search results: 6 logs matched
+2025-04-14 14:55:14 [WARNING] Search took 900ms
+2025-04-14 14:55:16 [ERROR] Search API error: 502 Bad Gateway
+2025-04-14 14:55:18 [INFO] User admin retried search
+2025-04-14 14:55:20 [DEBUG] Search retried: attempt 3
+2025-04-15 16:55:30 [INFO] GET /api/files 200 OK
+2025-04-15 16:55:32 [DEBUG] Files listed: 7
+2025-04-15 16:55:34 [WARNING] File count exceeds recommended limit
+2025-04-15 16:55:36 [ERROR] File deletion failed: locked by process
+2025-04-15 16:55:38 [INFO] User soham deleted file sample1_devlike.log
+2025-04-16 17:55:10 [INFO] GET /api/analytics 200 OK
+2025-04-16 17:55:12 [DEBUG] Analytics query params: {"date": "2025-04-16"}
+2025-04-16 17:55:14 [INFO] Analytics dashboard rendered
+2025-04-16 17:55:16 [WARNING] Dashboard load slow: 2.8s
+2025-04-16 17:55:18 [ERROR] Dashboard render failed: missing chart data
+2025-04-16 17:55:20 [INFO] GET /api/logs?level=INFO 200 OK
+2025-04-16 17:55:22 [DEBUG] Filtered logs: 30 info entries
+2025-04-16 17:55:24 [INFO] User admin exported info logs as CSV
+2025-04-16 17:55:26 [WARNING] Exported file size: 110KB
+2025-04-16 17:55:28 [ERROR] Failed to send export email
+2025-04-16 17:55:30 [INFO] GET /api/logs?date=2025-04-16 200 OK

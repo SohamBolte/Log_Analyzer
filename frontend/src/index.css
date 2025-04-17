@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --desc-secondary: #23293a;
+}
+body.dark {
+  --desc-secondary: #f3f6fa;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --desc-secondary: #23293a;
+}
+body.dark {
+  --desc-secondary: #f3f6fa;
+}
+

@@ -1,0 +1,121 @@
+2025-04-02 09:12:45 [INFO] Starting backend server on port 5000
+2025-04-02 09:12:47 [DEBUG] Loaded config from /etc/app/config.yaml
+2025-04-02 09:12:49 [INFO] Connecting to MongoDB at localhost:27017
+2025-04-02 09:12:50 [ERROR] Failed to connect to MongoDB: connection refused
+2025-04-02 09:13:01 [INFO] Retrying MongoDB connection
+2025-04-02 09:13:03 [INFO] Connected to MongoDB
+2025-04-02 09:13:05 [DEBUG] Initializing log rotation
+2025-04-02 09:13:06 [INFO] Log rotation complete
+2025-04-02 09:14:12 [DEBUG] GET /api/logs?level=ERROR 200 OK
+2025-04-02 09:15:23 [WARNING] High memory usage detected: 85%
+2025-04-02 09:16:00 [INFO] User soham logged in
+2025-04-02 09:16:05 [DEBUG] Auth token generated for user soham
+2025-04-02 09:16:10 [INFO] POST /api/upload 201 Created
+2025-04-02 09:16:15 [ERROR] File upload failed: invalid file format
+2025-04-02 09:16:18 [DEBUG] Request headers: {"Content-Type": "multipart/form-data"}
+2025-04-02 09:17:40 [INFO] Scheduled nightly backup at 02:00
+2025-04-02 09:19:01 [DEBUG] Cron job registered: backup_nightly
+2025-04-03 10:01:23 [INFO] GET /api/analytics 200 OK
+2025-04-03 10:01:24 [DEBUG] Analytics query params: {"source_file": "sample1_devlike.log"}
+2025-04-03 10:01:25 [INFO] Analytics dashboard rendered
+2025-04-03 10:02:40 [WARNING] Slow database response: 1200ms
+2025-04-03 10:03:10 [INFO] User admin logged out
+2025-04-03 10:03:45 [DEBUG] Session destroyed for user admin
+2025-04-03 10:04:01 [ERROR] Unable to send email: SMTP timeout
+2025-04-03 10:04:10 [INFO] GET /api/logs?level=INFO 200 OK
+2025-04-03 10:05:00 [DEBUG] Log filter applied: {"level": "INFO"}
+2025-04-03 10:05:30 [INFO] User soham downloaded logs as CSV
+2025-04-03 10:06:12 [WARNING] Disk usage at 92%
+2025-04-03 10:08:00 [INFO] POST /api/logs/filter 200 OK
+2025-04-03 10:09:15 [DEBUG] Filtered 53 log entries
+2025-04-04 11:22:45 [ERROR] Failed DB connection: authentication error
+2025-04-04 11:23:01 [INFO] Retrying DB connection
+2025-04-04 11:23:10 [INFO] Connected to DB
+2025-04-04 11:23:15 [DEBUG] DB connection pool size: 5
+2025-04-04 11:24:00 [INFO] GET /api/files 200 OK
+2025-04-04 11:24:05 [WARNING] File system nearly full: 97%
+2025-04-04 11:25:12 [INFO] User admin uploaded sample2_devlike.log
+2025-04-04 11:25:32 [DEBUG] File validation passed
+2025-04-04 11:26:00 [ERROR] Could not parse log entry at line 78
+2025-04-05 08:10:00 [INFO] Scheduled maintenance at 03:00
+2025-04-05 08:10:10 [DEBUG] Maintenance window set
+2025-04-05 08:11:00 [INFO] PUT /api/user/settings 200 OK
+2025-04-05 08:11:10 [WARNING] Deprecated API endpoint used: /api/old-logs
+2025-04-05 08:12:00 [ERROR] API rate limit exceeded for IP 192.168.1.55
+2025-04-05 08:12:05 [DEBUG] Rate limit reset scheduled
+2025-04-06 14:16:30 [DEBUG] API fetch for /api/logs?date=2025-04-06
+2025-04-06 14:17:00 [INFO] GET /api/logs?date=2025-04-06 200 OK
+2025-04-06 14:17:15 [WARNING] Large response size: 2.5MB
+2025-04-06 14:17:30 [ERROR] JSON parse error in response
+2025-04-06 14:18:00 [INFO] User soham logged out
+2025-04-06 14:18:30 [DEBUG] Session cleanup complete
+2025-04-07 09:07:35 [INFO] POST /api/analytics/top_messages 200 OK
+2025-04-07 09:08:00 [DEBUG] Querying top 10 frequent messages
+2025-04-07 09:08:30 [INFO] Top messages chart updated
+2025-04-07 09:09:00 [WARNING] Message frequency spike detected
+2025-04-07 09:09:30 [ERROR] Failed to render bar chart: missing data
+2025-04-07 09:10:00 [INFO] GET /api/logs?source_file=sample1_devlike.log 200 OK
+2025-04-07 09:10:30 [DEBUG] Log table refreshed
+2025-04-08 17:45:40 [INFO] GET /api/files 200 OK
+2025-04-08 17:46:00 [DEBUG] Files listed: 4
+2025-04-08 17:46:30 [WARNING] Unusual file detected: .DS_Store
+2025-04-08 17:47:00 [ERROR] Could not delete file: permission denied
+2025-04-08 17:47:30 [INFO] User admin deleted file sample1_old.log
+2025-04-09 16:30:00 [INFO] Nightly backup started
+2025-04-09 16:30:10 [DEBUG] Backup script running
+2025-04-09 16:30:20 [INFO] Backup completed successfully
+2025-04-09 16:30:30 [WARNING] Backup size exceeds 1GB
+2025-04-09 16:30:40 [ERROR] Failed to upload backup to S3
+2025-04-09 16:31:00 [INFO] Issue reported: backup upload failure
+2025-04-09 16:31:30 [DEBUG] Issue ticket created: #1234
+2025-04-10 12:45:40 [INFO] GET /api/logs?level=WARNING 200 OK
+2025-04-10 12:45:50 [DEBUG] Filtered logs: 7 warnings
+2025-04-10 12:46:00 [INFO] User soham exported warnings as CSV
+2025-04-10 12:46:10 [WARNING] Exported file size: 150KB
+2025-04-10 12:46:20 [ERROR] Failed to send export email
+2025-04-10 12:46:30 [INFO] GET /api/logs?date=2025-04-10 200 OK
+2025-04-10 12:46:40 [DEBUG] Log fetch duration: 340ms
+2025-04-11 18:45:40 [INFO] GET /api/analytics/hourly_counts_by_level 200 OK
+2025-04-11 18:45:50 [DEBUG] Hourly counts: {"INFO": 12, "ERROR": 4, "WARNING": 3, "DEBUG": 8}
+2025-04-11 18:46:00 [INFO] Hourly line chart updated
+2025-04-11 18:46:10 [WARNING] Chart rendering slow: 1800ms
+2025-04-11 18:46:20 [ERROR] Chart data missing for hour 13
+2025-04-11 18:46:30 [INFO] GET /api/logs 200 OK
+2025-04-12 22:45:40 [DEBUG] User filter changed: {"level": "ERROR"}
+2025-04-12 22:45:50 [INFO] GET /api/logs?level=ERROR 200 OK
+2025-04-12 22:46:00 [WARNING] Too many error logs: 23 in last hour
+2025-04-12 22:46:10 [ERROR] User admin exceeded error quota
+2025-04-12 22:46:20 [INFO] User admin notified
+2025-04-13 11:15:40 [INFO] GET /api/analytics 200 OK
+2025-04-13 11:15:50 [DEBUG] Analytics cache hit
+2025-04-13 11:16:00 [INFO] Dashboard load time: 1.2s
+2025-04-13 11:16:10 [WARNING] Analytics cache nearly expired
+2025-04-13 11:16:20 [ERROR] Failed to refresh analytics cache
+2025-04-13 11:16:30 [INFO] GET /api/logs?level=DEBUG 200 OK
+2025-04-13 11:16:40 [DEBUG] Filtered logs: 15 debug entries
+2025-04-13 11:16:50 [INFO] User soham exported debug logs as CSV
+2025-04-13 11:17:00 [WARNING] Exported file size: 80KB
+2025-04-13 11:17:10 [ERROR] Failed to send export email
+2025-04-13 11:17:20 [INFO] GET /api/logs?date=2025-04-13 200 OK
+2025-04-14 13:45:40 [DEBUG] GET /api/logs?search=timeout 200 OK
+2025-04-14 13:45:50 [INFO] Search results: 4 logs matched
+2025-04-14 13:46:00 [WARNING] Search took 1100ms
+2025-04-14 13:46:10 [ERROR] Search API error: 503 Service Unavailable
+2025-04-14 13:46:20 [INFO] User admin retried search
+2025-04-14 13:46:30 [DEBUG] Search retried: attempt 2
+2025-04-15 15:45:40 [INFO] GET /api/files 200 OK
+2025-04-15 15:45:50 [DEBUG] Files listed: 5
+2025-04-15 15:46:00 [WARNING] File count exceeds recommended limit
+2025-04-15 15:46:10 [ERROR] File deletion failed: locked by process
+2025-04-15 15:46:20 [INFO] User admin deleted file sample2_devlike.log
+2025-04-16 16:45:40 [INFO] GET /api/analytics 200 OK
+2025-04-16 16:45:50 [DEBUG] Analytics query params: {"date": "2025-04-16"}
+2025-04-16 16:46:00 [INFO] Analytics dashboard rendered
+2025-04-16 16:46:10 [WARNING] Dashboard load slow: 2.3s
+2025-04-16 16:46:20 [ERROR] Dashboard render failed: missing chart data
+2025-04-16 16:46:30 [INFO] GET /api/logs?level=INFO 200 OK
+2025-04-16 16:46:40 [DEBUG] Filtered logs: 25 info entries
+2025-04-16 16:46:50 [INFO] User admin exported info logs as CSV
+2025-04-16 16:47:00 [WARNING] Exported file size: 120KB
+2025-04-16 16:47:10 [ERROR] Failed to send export email
+2025-04-16 16:47:20 [INFO] GET /api/logs?date=2025-04-16 200 OK

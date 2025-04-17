@@ -1,0 +1,19 @@
+2025-04-16 07:00:00 [WARNING] Disk space low
+2025-04-16 08:15:10 [WARNING] High memory usage
+2025-04-16 09:30:20 [INFO] Scheduled backup started
+2025-04-16 10:45:30 [INFO] Scheduled backup completed
+2025-04-16 11:50:40 [WARNING] Backup verification failed
+2025-04-16 12:55:50 [ERROR] Backup process crashed
+2025-04-16 13:00:00 [INFO] Admin notified
+2025-04-16 14:15:10 [WARNING] Disk space critical
+2025-04-17 09:10:00 [INFO] Service started
+2025-04-17 09:20:15 [DEBUG] Checking configuration
+2025-04-17 09:30:30 [WARNING] Configuration deprecated
+2025-04-17 10:40:45 [INFO] Configuration loaded
+2025-04-17 11:50:00 [ERROR] Failed to load module
+2025-04-17 12:55:10 [INFO] Module loaded after retry
+2025-04-17 13:00:00 [DEBUG] Running scheduled job
+2025-04-17 14:10:10 [INFO] Scheduled job completed
+2025-04-17 15:20:20 [WARNING] High CPU usage
+2025-04-17 16:30:30 [ERROR] Service crashed
+2025-04-17 17:40:40 [INFO] Service restarted
